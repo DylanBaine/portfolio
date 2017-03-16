@@ -2,7 +2,11 @@
 
 
 @section('content')
-<div class="col-md 12 contact-button-top text-center">
+
+@include('front-end.includes.contact-form')
+
+
+<div class="col-md 12 form-btn contact-button-top text-center">
 	<div>
 		<div class="white-font">
 			<small>Contact Me</small>
@@ -10,8 +14,8 @@
 	</div>
 </div>
 
-<div class="col-md-1 hidden-sm hidden-xs visible-md-1 full-height contact-button-left">
-	<div class="col-md-8 full-height flex-center">
+<div class="col-md-1 form-btn hidden-sm hidden-xs visible-md-1 full-height contact-button-left text-right">
+	<div class="full-height flex-center">
 		<div class="white-font">
 			<small>Contact Me</small>
 		</div>

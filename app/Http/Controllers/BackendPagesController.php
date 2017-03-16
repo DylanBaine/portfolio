@@ -22,11 +22,13 @@ class BackendPagesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function home()
-    {
+    {   
+
+        $messages = \App\Messages::latest()->get();
 
         $portfolio = \App\Portfolio::latest()->get();
 
-        return view('back-end.cms.home', compact('portfolio'));
+        return view('back-end.cms.home', compact('portfolio', 'messages'));
     }
 
     public function editPage()

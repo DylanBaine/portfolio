@@ -16,6 +16,9 @@ body{
 a{
 	color: $blue;
 }
+.blue-bg{
+	background-color: $blue;
+}
 .container-fluid{
 	padding: 0px;
 	margin: 0px;
@@ -68,21 +71,20 @@ a{
 	transition: all .8s;
 }
 .contact-button-top{
+	position: fixed;
 	box-shadow: 2px 2px 2px $black;
 	background: $blue;
 	width: 100vw;
 	margin: 0;
-	position: fixed;
 	padding: 20px;
 	opacity: .6;
 	transition: all .3s;
-	position: absolute;
 	z-index: 9;
 }
 .contact-button-left:hover,
 .contact-button-left:focus,
 .contact-button-top:hover,
-.contact-button-top:focus,{
+.contact-button-top:focus{
 	opacity: 1;
 	cursor: pointer;
 }
@@ -98,4 +100,34 @@ iframe{
 
 footer{
 	box-shadow: 2px -1px 5px $black;
+}
+
+.contact-form{
+	transition: all .5s;
+	margin-left: -100vw;
+	position: fixed;
+	z-index: 999;
+	background-color: rgba($black, .6);
+}
+
+.contact-form label{
+	color: $white;
+}
+
+.exit{
+	color: $white;
+	padding: 4px;
+	position: relative;
+	left: 5px;
+	top: 10px;
+	background: $black;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+}
+
+.exit:hover{
+	color: $black;
+	cursor: pointer;
+	background: $white;
 }

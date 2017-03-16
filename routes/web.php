@@ -24,6 +24,7 @@ Route::resource('/main-header', 'HomePageHeaderController');
 Route::resource('/about-me', 'AboutMeController');
 Route::resource('/skill-set', 'SkillSetController');
 Route::resource('/portfolio', 'PortfolioController');
+Route::resource('/message', 'MessagesController');
 
 
 

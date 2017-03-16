@@ -1,3 +1,16 @@
+$(document).ready(function(){
+	$('.form-btn').click(function(){
+		$('.contact-form').css({
+			'margin-left' : '0px'
+		})
+	});
+	$('.exit').click(function(){
+		$('.contact-form').css({
+			'margin-left' : '-100vw'
+		})
+	})
+});
+
 
 $(window).scroll(function(){
 
@@ -20,16 +33,14 @@ $(window).scroll(function(){
 		});
 	}
 
-	if(wScroll < 300){
+	if(wScroll < 600){
 		$('.contact-button-top').css({
-			'opacity': '.7',
-			'position': 'fixed'
-
+			'top' : '0px'
 		})
 	}
-	if(wScroll > 300){
+	if(wScroll > 600){
 		$('.contact-button-top').css({
-			'opacity' : '0'
+			'top' : '-70px'
 		})
 	}
 
