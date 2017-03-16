@@ -1,0 +1,101 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//-------------------MY SASS-------------------------------------------------------------
+body{
+	width: 100vw;
+	overflow-x: hidden;
+}
+a{
+	color: $blue;
+}
+.container-fluid{
+	padding: 0px;
+	margin: 0px;
+}
+.full-height {
+   min-height: 100vh;
+}
+
+.half-height{
+	height: 50vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.flex-center-hor {
+    align-items: center;
+    display: flex;
+}
+.jumbotron{
+	margin: 0;
+	padding: 0;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.white-font{
+	color: $white;
+}
+
+.black-bg{
+	background-color: $black;
+}
+#portfolio-image > img{
+	padding: 0;
+	border-radius: 20px;
+	border: solid 2px $black;
+}
+.contact-button-left{
+	box-shadow: 2px 2px 2px $black;
+	background: $blue;
+	top: 100vh;
+	position: fixed; 
+	z-index: 9; 
+	margin: 0; 
+	padding: 0; 
+	opacity: .6;
+	transition: all .8s;
+}
+.contact-button-top{
+	box-shadow: 2px 2px 2px $black;
+	background: $blue;
+	width: 100vw;
+	margin: 0;
+	position: fixed;
+	padding: 20px;
+	opacity: .6;
+	transition: all .3s;
+	position: absolute;
+	z-index: 9;
+}
+.contact-button-left:hover,
+.contact-button-left:focus,
+.contact-button-top:hover,
+.contact-button-top:focus,{
+	opacity: 1;
+	cursor: pointer;
+}
+.about-me-text{
+	margin: 0;
+}
+
+iframe{
+	box-shadow: 2px 2px 2px $black;
+	border-radius: 5px;
+	border: solid 1px $black;
+}
+
+footer{
+	box-shadow: 2px -1px 5px $black;
+}
