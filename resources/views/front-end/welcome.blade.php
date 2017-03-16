@@ -6,7 +6,7 @@
 @include('front-end.includes.contact-form')
 
 
-<div class="col-md 12 form-btn contact-button-top text-center">
+<div class=" col-md-12 form-btn contact-button-top text-center">
 	<div>
 		<div class="white-font">
 			<small>Contact Me</small>
@@ -14,7 +14,7 @@
 	</div>
 </div>
 
-<div class="col-md-1 form-btn hidden-sm hidden-xs visible-md-1 full-height contact-button-left text-right">
+<div class="form-btn hidden-sm hidden-xs visible-md-1 full-height contact-button-left ">
 	<div class="full-height flex-center">
 		<div class="white-font">
 			<small>Contact Me</small>
@@ -51,7 +51,7 @@
 </section>
 
 
-<footer class="col-md-12 flex-center-hor black-bg white-font" style="height: 10vh;">
+<footer class="col-md-12 flex-center-hor" style="height: 10vh;">
 	<div class="col-md-12 col-xs-12 text-center">
 		<div class="col-md-6 col-xs-12">
 			&copy; - {{Date('Y')}}

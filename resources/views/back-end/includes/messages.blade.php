@@ -1,5 +1,5 @@
 
-<div class="col-md-8 col-md-offset-2 messages-container">
+<div class="col-md-4 messages-container">
 	<h1 class="text-center">Messages</h1>
 	@foreach($messages as $message)
 
@@ -13,9 +13,9 @@
 			<p class="text-center">{{$message->name}} | <small> {{$message->email}}</small></p>			
 		</div>
 
-		<hr class="col-md-12">
 		<div class="col-md-12">
 			<h4 class="text-center">Message: </h4>
+			<hr class="col-md-12">
 			<p class="text-center">{{$message->message}}</p>			
 		</div>
 

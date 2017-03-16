@@ -1,9 +1,9 @@
 <div class="contact-form col-md-12 col-xs-12">
 
-<div class="exit flex-center">X</div>
+<h1 class=" exit flex-center"> X </h1>
 
 <div class="full-height flex-center">
-		<div class="col-md-4">
+		<div class="col-md-4" style="margin-top: -30vh;">
 
 			<form action="/message" method="POST">
 

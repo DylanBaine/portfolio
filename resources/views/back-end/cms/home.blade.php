@@ -1,7 +1,7 @@
 @extends('back-end.layout.main-layout')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
 
 	@include('back-end.includes.messages')
 

@@ -15,9 +15,7 @@ class MessagesController extends Controller
     public function store()
     {
     	$this->validate(request(),[
-    		'name' 		=> 'required',
     		'email' 	=> 'required',
-    		'subject' 	=> 'required',
     		'message' 	=> 'required'
     		]);
 

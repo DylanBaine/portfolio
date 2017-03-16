@@ -1,8 +1,8 @@
 <section id="portfolio-form">
-	<div class="col-md-12 text-center">
+	<div class="col-md-8 text-center">
 		<h1 class="text-center">Add a Portfolio Item</h1>
 	</div>
-	<div class="col-md-10 col-md-offset-1 well">
+	<div class="col-md-8 well">
 		<form action="/portfolio" method="POST" enctype="multipart/form-data" class="col-md-12">
 
 			{{csrf_field()}}

@@ -6,7 +6,7 @@ $(document).ready(function(){
 	});
 	$('.exit').click(function(){
 		$('.contact-form').css({
-			'margin-left' : '-100vw'
+			'margin-left' : '-150vw'
 		})
 	})
 });
@@ -24,21 +24,21 @@ $(window).scroll(function(){
 
 	if(wScroll > docHeight/2){
 		$('.contact-button-left').css({
-			'top': '0px'
+			'left': '0px'
 		});
 	}
 	if(wScroll < docHeight/2){
 		$('.contact-button-left').css({
-			'top': '100vh'
+			'left': '-100vh'
 		});
 	}
 
-	if(wScroll < 600){
+	if(wScroll < $(window).height()-20){
 		$('.contact-button-top').css({
 			'top' : '0px'
 		})
 	}
-	if(wScroll > 600){
+	if(wScroll > $(window).height()+20){
 		$('.contact-button-top').css({
 			'top' : '-70px'
 		})
