@@ -20,6 +20,8 @@ a{
 	background-color: $blue;
 }
 .container-fluid{
+	width: 100vw;
+	overflow-x: hidden;
 	padding: 0px;
 	margin: 0px;
 }
@@ -41,11 +43,14 @@ a{
     display: flex;
 }
 .jumbotron{
+	height: 100vh;
 	margin: 0;
 	padding: 0;
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	overflow: hidden;
+	background-repeat: no-repeat;
 }
 .white-font{
 	color: $white;
@@ -125,6 +130,7 @@ footer{
 	width: 50px;
 	height: 50px;
 	border-radius: 100%;
+	transition: all .3s;
 }
 
 .exit:hover{
@@ -132,3 +138,18 @@ footer{
 	cursor: pointer;
 	background: $white;
 }
+
+@media (max-width: 768px){
+	.jumbotron{
+		background-attachment: scroll;
+		background-size: contain;
+		background-position: bottom center;
+	}
+	.portfolio-header{
+		font-size: 100%;
+	}
+	.exit{
+		top: -20px;
+		left: -20px;
+	}
+} 

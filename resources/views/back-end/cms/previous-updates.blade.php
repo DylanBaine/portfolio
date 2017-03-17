@@ -2,12 +2,13 @@
 
 @section('content')
 <div class="container-fluid">
-
-
+ 
+	<div class="col">
 
 		<div class="col-md-12">
 			<h1 class="text-center">Previous Changes</h1>
 		</div>
+		
 		<div class="well col-md-12">
 			<div class="col-md-12 text-center">
 					<h3 class="text-center">Main Header's</h3>
@@ -17,7 +18,7 @@
 
 							<div class="panel panel-info">
 								
-								<div class="jumbotron flex-center" style="background-image: url(images/{{$header->image}}); background-repeat: no-repeat; background-size: cover; background-position: center; height: 70vh;">
+								<div class="jumbotron flex-center" style="background-image: url(images/{{$header->image}}); background-repeat: no-repeat; background-size: cover; background-position: center; height: 70vh; background-attachment: none;">
 								<div>
 									<h2 class="text-center">{{$header->title}}</h2>
 									
@@ -212,6 +213,8 @@
 
 			</div>
 
+		
+	</div>
 
 </div>
 
