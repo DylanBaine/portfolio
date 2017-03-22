@@ -16,7 +16,9 @@ class AboutMeController extends Controller
 			$filename = "profile-pic-" . time() . '.jpg';
 
 			Image::make($file)->save(public_path('images/' . $filename));
-		}
+		}else{
+            $filename = null;
+        }
 
 		$aboutMe = new \App\AboutMe;
 
@@ -26,7 +28,7 @@ class AboutMeController extends Controller
 
 		$aboutMe->save();
 
-		return view('front-end.welcome');
+		return redirect('/');
 	}
 
 	public function show()

@@ -16,7 +16,7 @@
 			<div class="">
 
 				<hr style="width: 90%">
-				<div class="text-center" {!! $skillSet->body !!} </div>
+				<div class="text-center"> {!! $skillSet->body !!} </div>
 				<hr style="width: 90%">
 
 			</div>

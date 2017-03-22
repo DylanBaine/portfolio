@@ -30,4 +30,13 @@ class MessagesController extends Controller
 
     	return redirect('/');
     }
+
+    public function destroy($id)
+    {
+        $message = \App\Messages::find($id);
+
+        $message->delete();
+
+        return redirect('/home');
+    }
 }

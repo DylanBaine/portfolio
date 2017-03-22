@@ -4,7 +4,7 @@
 	<div class="col-md-10 col-md-offset-1 well">
 	<h2 class="text-center">About Me</h2>
 	<hr>
-		<form action="/update-about-me" method="post" enctype="multipart/form-data" class="col-md-12">
+		<form action="{{url ( 'about-me' ) }}" method="post" enctype="multipart/form-data" class="col-md-12">
 
 			{{csrf_field()}}
 

@@ -19,6 +19,12 @@
 			<p class="text-center">{{$message->message}}</p>			
 		</div>
 
+		<form action="message/{{$message->id}}" method="POST">
+			{{csrf_field()}}
+			{{method_field('delete')}}
+			<input type="submit" class="btn btn-danger btn-block" value="Delete">
+		</form>
+
 	</div>
 
 	@endforeach

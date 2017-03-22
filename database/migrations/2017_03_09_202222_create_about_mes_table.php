@@ -16,7 +16,7 @@ class CreateAboutMesTable extends Migration
         Schema::create('about_mes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('profile-pic')->nullable();
+            $table->string('image')->nullable();
             $table->text('body');
             $table->timestamps();
         });
